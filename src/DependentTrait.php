@@ -11,6 +11,7 @@
 
 namespace NasExt\Forms;
 
+use BackedEnum;
 use NasExt;
 use Nette;
 
@@ -84,8 +85,10 @@ trait DependentTrait
 
 
 	/**
-	 * @param string|int $value
-	 * @return self
+	 * Sets selected item (by key).
+	 * @param  string|int|BackedEnum|null  $value
+	 * @return static
+	 * @internal
 	 */
 	public function setValue($value)
 	{
